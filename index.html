@@ -1,11 +1,73 @@
-# Baby Clothes Shop Page Simulation
-print("Ilmi's preloved!")
-items = [
-    {"name": "Onesie", "price": 15.99},
-    {"name": "Baby Hat", "price": 8.50},
-    {"name": "Booties", "price": 12.00}
-]
-print("\nAvailable Items:")
-for item in items:
-    print(f"- {item['name']}: ${item['price']:.2f}")
-print("\nThank you for visiting!")
+Folder structure (all files in same root folder):
+- index.html
+- 01.jpeg
+- 02.jpeg
+- 03.jpeg
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Clothes Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f9f5f0; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; color: #ff8fab; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 260px; object-fit: cover; }
+        .card-content { padding: 16px; }
+        .card h3 { margin: 0 0 8px; }
+        .price { font-size: 1.3em; color: #ff8fab; font-weight: bold; }
+        .whatsapp-btn { display: block; width: fit-content; margin: 30px auto; padding: 14px 28px; background: #25D366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; }
+        @media (max-width: 600px) { .products { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Customize shop name below -->
+        <h1>Baby Clothes Shop</h1>
+        
+        <div class="products">
+            <!-- Product 1 - Customize title, size, description, price -->
+            <div class="card">
+                <img src="01.jpeg" alt="Product 1">
+                <div class="card-content">
+                    <h3>[Product Title 1]</h3>
+                    <p>Size: [Size e.g. 0-3M]</p>
+                    <p>[Short product description here]</p>
+                    <div class="price">$[Price]</div>
+                </div>
+            </div>
+            
+            <!-- Product 2 - Customize title, size, description, price -->
+            <div class="card">
+                <img src="02.jpeg" alt="Product 2">
+                <div class="card-content">
+                    <h3>[Product Title 2]</h3>
+                    <p>Size: [Size e.g. 3-6M]</p>
+                    <p>[Short product description here]</p>
+                    <div class="price">$[Price]</div>
+                </div>
+            </div>
+            
+            <!-- Product 3 - Customize title, size, description, price -->
+            <div class="card">
+                <img src="03.jpeg" alt="Product 3">
+                <div class="card-content">
+                    <h3>[Product Title 3]</h3>
+                    <p>Size: [Size e.g. 6-12M]</p>
+                    <p>[Short product description here]</p>
+                    <div class="price">$[Price]</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Customize WhatsApp number in the href below (replace 1234567890) -->
+        <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+    </div>
+</body>
+</html>
+```
