@@ -1,0 +1,9 @@
+# Baby clothes shop mockup
+products = [
+    {"name": "Baby Onesie", "size": "0-3M", "price": 15.99},
+    {"name": "Cute Romper", "size": "3-6M", "price": 22.50},
+]
+print("Welcome to Baby Threads Shop!")
+for p in products:
+    print(f"{p['name']} ({p['size']}) - ${p['price']}")
+print(f"Total items: {len(products)}")
