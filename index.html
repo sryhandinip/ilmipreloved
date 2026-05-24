@@ -1,4 +1,4 @@
-# Baby clothes shop mockup
+# Baby clothes shop
 products = [
     {"name": "Baby Onesie", "size": "0-3M", "price": 15.99},
     {"name": "Cute Romper", "size": "3-6M", "price": 22.50},
@@ -7,3 +7,10 @@ print("Welcome to Baby Threads Shop!")
 for p in products:
     print(f"{p['name']} ({p['size']}) - ${p['price']}")
 print(f"Total items: {len(products)}")
+
+
+# page
+html = '''<!DOCTYPE html>
+<html><head><title>Baby Clothes</title><style>body{font-family:Arial;text-align:center;margin-top:50px} h1{color:#ff69b4}</style></head>
+<body><h1>Welcome to Baby Clothes</h1><p>Adorable outfits for your little ones!</p><button>Shop Now</button></body></html>'''
+print(html)
